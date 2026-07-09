@@ -16,7 +16,8 @@ public class CorsConfig {
                 registry.addMapping("/api/**")
                         // Add your deployed frontend origin here once it exists,
                         // e.g. "https://yourdomain.com"
-                        .allowedOrigins("http://localhost:5173")
+                        .allowedOrigins("http://localhost:5173",
+                                "https://finance-dashboard-wo-lime-87.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };
